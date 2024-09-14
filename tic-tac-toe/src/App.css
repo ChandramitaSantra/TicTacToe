@@ -1,0 +1,136 @@
+
+
+/* Board Styles */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #333;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cell:hover {
+  background: #f0f0f0;
+  border-color: #bbb;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* General Styles */
+.App {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #e0e0e0, #f4f4f9);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+/* Centering Form */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  max-width: 360px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form Header */
+form h2 {
+  margin: 0;
+  color: #444;
+  font-size: 28px;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  background: linear-gradient(to right, #0056b3, #003d80);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Footer Message */
+.footer-message {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  form {
+    padding: 15px;
+  }
+  
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  input {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
